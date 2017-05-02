@@ -4,9 +4,9 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-	<f:view locale="#{sessionBean.lang}">
-		<h:html lang="#{sessionBean.lang}">
-		<h:head>
+	<f:view>
+		<html lang="#{sessionBean.lang}">
+		<head>
 			<title>#{appBean.name}</title>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			<meta name="viewport"
@@ -17,9 +17,9 @@
 
 			<ui:insert name="javascripts"></ui:insert>
 			<ui:insert name="styles"></ui:insert>
-		</h:head>
+		</head>
 
-		<h:body role="document">
+		<body role="document">
 			<h:form prependId="false">
 				<p:sticky target="header" />
 
@@ -95,7 +95,7 @@
 
 				</p:outputPanel>
 			</h:form>
-		</h:body>
-		</h:html>
+		</body>
+		</html>
 	</f:view>
 </ui:composition>

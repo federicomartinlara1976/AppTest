@@ -4,6 +4,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui"
+	xmlns:chronos="http://chronos.componentes.jsf/composite"
 	template="/WEB-INF/templates/templateHome.xhtml">
 
 	<ui:define name="pageTitle">
@@ -11,12 +12,10 @@
 			<h:outputText value="#{res['apptest.title']}" />
 		</h3>
 	</ui:define>
-	
-	<ui:define name="banner">
-		
-	</ui:define>
 
 	<ui:define name="body">
+		<chronos:inputIban value="#{bitcoinCalculator.iban}"/>
 		
+		<chronos:login model="#{bitcoinCalculator.loginModel}"/>
 	</ui:define>
 </ui:composition>
