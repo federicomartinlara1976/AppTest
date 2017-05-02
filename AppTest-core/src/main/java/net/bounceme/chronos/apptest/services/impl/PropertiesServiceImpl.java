@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import net.bounceme.chronos.apptest.services.PropertiesService;
-import net.bounceme.chronos.apptest.utils.BitcoinCalculatorProperties;
+import net.bounceme.chronos.apptest.utils.AppTestProperties;
 
 /**
  * @author frederik
@@ -16,7 +16,7 @@ public class PropertiesServiceImpl implements PropertiesService {
 
 	@Override
 	public String getProperty(String name) {
-		return BitcoinCalculatorProperties.getInstance().getString(name);
+		return AppTestProperties.getInstance().getString(name);
 	}
 
 }

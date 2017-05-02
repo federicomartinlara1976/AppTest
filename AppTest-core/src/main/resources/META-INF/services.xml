@@ -9,13 +9,13 @@
 		http://www.springframework.org/schema/context/spring-context-3.1.xsd
 		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
-	<bean class="net.bounceme.chronos.bitcoincalculator.config.AppConfig"/>
+	<bean class="net.bounceme.chronos.apptest.config.AppConfig"/>
 	
 	<aop:aspectj-autoproxy />
 	
 	<!-- Aspect -->
-	<bean id="timeTrack" class="net.bounceme.chronos.bitcoincalculator.aspect.TimeTrackAspect" />
+	<bean id="timeTrack" class="net.bounceme.chronos.apptest.aspect.TimeTrackAspect" />
 	
-	<context:component-scan base-package="net.bounceme.chronos.bitcoincalculator.services" />
+	<context:component-scan base-package="net.bounceme.chronos.apptest.services" />
 	
 </beans>

@@ -2,25 +2,20 @@
 <faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
-	<!-- <lifecycle> <phase-listener>net.bounceme.chronos.utils.jsf.listener.DebugPhaseListener</phase-listener> 
-		</lifecycle> -->
+	<lifecycle> 
+		<phase-listener>net.bounceme.chronos.utils.jsf.listener.DebugPhaseListener</phase-listener> 
+	</lifecycle>
 
 	<application>
 		<locale-config>
-			<default-locale>en</default-locale>
-			<supported-locale>es</supported-locale>
-			<supported-locale>fr</supported-locale>
+			<default-locale>es</default-locale>
 		</locale-config>
 		
 		<resource-bundle>
-			<base-name>net.bounceme.chronos.bitcoincalculator.MessageBundle</base-name>
+			<base-name>net.bounceme.chronos.apptest.MessageBundle</base-name>
 			<var>res</var>
 		</resource-bundle>
 		
-		<resource-bundle>
-			<base-name>net.bounceme.chronos.bitcoincalculator.PubliBundle</base-name>
-			<var>pub</var>
-		</resource-bundle>
 	</application>
 
 	<!-- Global navigation rules -->

@@ -17,12 +17,6 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>net.bounceme.chronos.chronoslibs</groupId>
-			<artifactId>chronos-web-utils</artifactId>
-			<version>${chronoslibs.version}</version>
-		</dependency>
-
-		<dependency>
 			<groupId>net.bounceme.chronos.apptest</groupId>
 			<artifactId>AppTest-core</artifactId>
 			<version>${my.version}</version>
@@ -43,6 +37,12 @@
 		<dependency>
 			<groupId>net.bounceme.chronos.chronoslibs</groupId>
 			<artifactId>chronos-jsf-components</artifactId>
+			<version>${chronoslibs.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.bounceme.chronos.chronoslibs</groupId>
+			<artifactId>chronos-web-utils</artifactId>
 			<version>${chronoslibs.version}</version>
 		</dependency>
 

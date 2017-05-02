@@ -26,7 +26,7 @@
 	
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
-		<param-value>bitcoincalculator</param-value>
+		<param-value>AppTest</param-value>
 	</context-param>
 	
 	<context-param>
@@ -43,7 +43,7 @@
 	</listener>
 	
 	<listener>
-		<listener-class>net.bounceme.chronos.bitcoincalculator.listeners.InitListener</listener-class>
+		<listener-class>net.bounceme.chronos.apptest.listeners.InitListener</listener-class>
 	</listener>
 	
 	<servlet>

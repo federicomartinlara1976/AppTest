@@ -17,20 +17,20 @@ import net.bounceme.chronos.utils.properties.service.dto.PropertyDTO;
  * @author frederik
  *
  */
-public class BitcoinCalculatorProperties implements CollectionProperties {
-	private static final String BUNDLE_NAME = "BitcoinCalculator"; //$NON-NLS-1$
+public class AppTestProperties implements CollectionProperties {
+	private static final String BUNDLE_NAME = "AppTest"; //$NON-NLS-1$
 	
-	private static BitcoinCalculatorProperties instance;
+	private static AppTestProperties instance;
 
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
-	private static final Logger LOGGER = Logger.getLogger(BitcoinCalculatorProperties.class);
+	private static final Logger LOGGER = Logger.getLogger(AppTestProperties.class);
 	
-	private BitcoinCalculatorProperties() {}
+	private AppTestProperties() {}
 	
-	public static BitcoinCalculatorProperties getInstance() {
+	public static AppTestProperties getInstance() {
 		if (instance == null) {
-			instance = new BitcoinCalculatorProperties();
+			instance = new AppTestProperties();
 		}
 		return instance;
 	}

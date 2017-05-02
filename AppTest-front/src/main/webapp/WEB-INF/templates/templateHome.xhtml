@@ -38,13 +38,6 @@
 						<p:outputPanel>
 							<ui:insert name="pageTitle">Default content</ui:insert>
 						</p:outputPanel>
-						<p:selectOneMenu id="selectLang"
-							valueChangeListener="#{sessionBean.reset}"
-							value="#{sessionBean.lang}" onchange="submit()" effect="slide">
-							<f:selectItem itemLabel="Español" itemValue="es" />
-							<f:selectItem itemLabel="Ingles" itemValue="en" />
-							<f:selectItem itemLabel="Francés" itemValue="fr" />
-						</p:selectOneMenu>
 					</p:panelGrid>
 
 					<p:outputPanel id="content" layout="block">
@@ -87,7 +80,7 @@
 						<p:outputPanel styleClass="section c100" layout="block">
 							<p>
 								<h:outputText styleClass="white"
-									value="#{res['calculator.copyright']}" escape="true" />
+									value="#{res['apptest.copyright']}" escape="true" />
 							</p>
 							<p:outputPanel styleClass="social">
 								<h:outputLink value="https://github.com/federicomartinlara1976">
