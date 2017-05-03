@@ -4,31 +4,17 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:chronos="http://chronos.componentes.jsf/composite"
-	xmlns:p="http://primefaces.org/ui">
-	<f:view>
-		<h:html lang="#{sessionBean.lang}">
-		<h:head>
-			<title>#{appBean.name}</title>
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-			<meta name="viewport"
-				content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/templateHome.xhtml">
+	
+	<ui:define name="pageTitle">
+		<h3>
+			<h:outputText value="Error" />
+		</h3>
+	</ui:define>
 
-			<link rel="stylesheet" type="text/css"
-				href="#{appBean.context}/css/styles.css" />
-
-			<ui:insert name="javascripts"></ui:insert>
-			<ui:insert name="styles"></ui:insert>
-		</h:head>
-
-		<h:body role="document">
-			<h:form prependId="false">
-				<p:outputPanel id="main" styleClass="main c100" layout="block">
-					<chronos:inputIban value="#{bitcoinCalculator.iban}"/>
+	<ui:define name="body">
 		
-					<chronos:login model="#{bitcoinCalculator.loginModel}"/>	
-				</p:outputPanel>
-			</h:form>
-		</h:body>
-		</h:html>
-	</f:view>
+	</ui:define>
+	
 </ui:composition>

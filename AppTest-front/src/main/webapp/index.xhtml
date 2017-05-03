@@ -14,8 +14,18 @@
 	</ui:define>
 
 	<ui:define name="body">
-		<chronos:inputIban value="#{bitcoinCalculator.iban}"/>
-		
-		<chronos:login model="#{bitcoinCalculator.loginModel}"/>
+		<p:tabView id="solapas" dynamic="true" cache="false">
+			<p:tab id="loginTab" title="Login">
+				<chronos:login id="login" header="Login"
+					model="#{bitcoinCalculator.loginModel}" />
+			</p:tab>
+			<p:tab id="inputDateTab" title="InputDate">
+				<chronos:inputDate id="date" value="#{bitcoinCalculator.date}"
+					maxyear="2000" minyear="1990" />
+			</p:tab>
+			<p:tab id="inputIbanTab" title="InputIban">
+				<chronos:inputIban id="iban" value="#{bitcoinCalculator.iban}" />
+			</p:tab>
+		</p:tabView>
 	</ui:define>
 </ui:composition>

@@ -1,6 +1,7 @@
 package net.bounceme.chronos.apptest.controllers;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
@@ -46,6 +47,8 @@ public class BitcoinCalculator extends BaseBean implements Serializable {
 	private Iban iban;
 	
 	private LoginModel loginModel; 
+	
+	private Date date;
 
 	public BitcoinCalculator() {
 		loginModel = new LoginModel();
@@ -97,5 +100,19 @@ public class BitcoinCalculator extends BaseBean implements Serializable {
 	 */
 	public void setLoginModel(LoginModel loginModel) {
 		this.loginModel = loginModel;
+	}
+
+	/**
+	 * @return the date
+	 */
+	public Date getDate() {
+		return date;
+	}
+
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(Date date) {
+		this.date = date;
 	}
 }
