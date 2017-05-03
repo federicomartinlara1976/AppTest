@@ -60,7 +60,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>BitcoinCalculator</finalName>
+		<finalName>AppTest</finalName>
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
