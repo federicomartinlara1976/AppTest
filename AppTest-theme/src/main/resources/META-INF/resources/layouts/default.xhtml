@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<ui:insert name="ads"></ui:insert>
+
+	<title>#{appBean.name}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<h:outputStylesheet library="css" name="layout-default.css" />
+	<h:outputStylesheet library="css" name="nano.css" />
+	<h:outputStylesheet library="css" name="styles.css" />
+	<h:outputScript library="js" name="nanoscroller.js" />
+</h:head>
+
+<h:body role="document">
+
+	<ui:include src="wait.xhtml" />
+
+	<p:outputPanel styleClass="layout-wrapper layout-menu-static"
+		layout="block">
+		<p:outputPanel styleClass="topbar" layout="block">
+			<ui:insert name="pageTitle">Default content</ui:insert>
+			<h:outputLink id="menu-button" value="#">
+				<i class="fa fa-bars"></i>
+			</h:outputLink>
+		</p:outputPanel>
+
+		<p:outputPanel styleClass="layout-main" layout="block">
+			<p:outputPanel styleClass="layout-menu-wrapper" layout="block">
+				<p:outputPanel styleClass="nano has-scrollbar" layout="block">
+					<ui:insert name="menu">Default content</ui:insert>
+				</p:outputPanel>
+			</p:outputPanel>
+		</p:outputPanel>
+		<p:outputPanel styleClass="layout-content" layout="block">
+			<ui:insert name="body">Default content</ui:insert>
+		</p:outputPanel>
+		<p:outputPanel styleClass="layout-footer clearfix" layout="block">
+
+			<h:outputText value="#{res['apptest.copyright']}" escape="true" />
+
+			<p:outputPanel styleClass="layout-footer-right" layout="block">
+				<h:outputLink value="https://github.com/federicomartinlara1976"
+					target="_blank">
+					<p:graphicImage styleClass="icon"
+						name="#{FacesContext.getCurrentInstance().getExternalContext()}/images/github-128.png"
+						width="24" />
+				</h:outputLink>
+			</p:outputPanel>
+		</p:outputPanel>
+	</p:outputPanel>
+</h:body>
+</html>
