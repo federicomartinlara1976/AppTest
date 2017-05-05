@@ -13,9 +13,9 @@
 		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 	<h:outputStylesheet library="css" name="layout-default.css" />
-	<h:outputStylesheet library="css" name="nano.css" />
+	<h:outputStylesheet library="css" name="nanoscroller.css" />
 	<h:outputStylesheet library="css" name="styles.css" />
-	<h:outputScript library="js" name="nanoscroller.js" />
+	<h:outputScript library="js" name="jquery.nanoscroller.min.js" />
 </h:head>
 
 <h:body role="document">
@@ -25,7 +25,7 @@
 	<p:outputPanel styleClass="layout-wrapper layout-menu-static"
 		layout="block">
 		<p:outputPanel styleClass="topbar" layout="block">
-			<ui:insert name="pageTitle">Default content</ui:insert>
+			<ui:insert name="title">Default content</ui:insert>
 			<h:outputLink id="menu-button" value="#">
 				<i class="fa fa-bars"></i>
 			</h:outputLink>
@@ -33,13 +33,13 @@
 
 		<p:outputPanel styleClass="layout-main" layout="block">
 			<p:outputPanel styleClass="layout-menu-wrapper" layout="block">
-				<p:outputPanel styleClass="nano has-scrollbar" layout="block">
+				<p:outputPanel styleClass="nano" layout="block">
 					<ui:insert name="menu">Default content</ui:insert>
 				</p:outputPanel>
 			</p:outputPanel>
 		</p:outputPanel>
 		<p:outputPanel styleClass="layout-content" layout="block">
-			<ui:insert name="body">Default content</ui:insert>
+			<ui:insert name="content">Default content</ui:insert>
 		</p:outputPanel>
 		<p:outputPanel styleClass="layout-footer clearfix" layout="block">
 
