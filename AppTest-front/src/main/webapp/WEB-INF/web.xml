@@ -72,7 +72,7 @@
 	</error-page>
 	
 	<error-page>
-		<exception-type>404</exception-type>
+		<error-code>404</error-code>
 		<location>/faces/404.xhtml</location>
 	</error-page>
 	

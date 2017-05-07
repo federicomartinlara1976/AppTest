@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:chronos="http://chronos.componentes.jsf/composite"
+	template="/layouts/template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText value="#{res['apptest.title']}" />
+	</ui:define>
+
+	<ui:define name="content">
+		<p:tabView id="solapas" dynamic="true" cache="false">
+			<p:tab id="loginTab" title="Login">
+				<chronos:login id="login" header="Login"
+					model="#{bitcoinCalculator.loginModel}" />
+			</p:tab>
+			<p:tab id="inputDateTab" title="InputDate">
+				<chronos:inputDate id="date" value="#{bitcoinCalculator.date}"
+					maxyear="2000" minyear="1990" />
+			</p:tab>
+			<p:tab id="inputIbanTab" title="InputIban">
+				<chronos:inputIban id="iban" value="#{bitcoinCalculator.iban}" />
+			</p:tab>
+		</p:tabView>
+	</ui:define>
+</ui:composition>

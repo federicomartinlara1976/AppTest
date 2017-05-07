@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<ui:insert name="ads"></ui:insert>
+
+	<title>#{appBean.name}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<h:outputStylesheet library="primefaces-AppTest" name="layout-default.css" />
+	<h:outputStylesheet library="primefaces-AppTest" name="styles.css" />
+</h:head>
+
+<h:body role="document" styleClass="landing-body">
+	<p:outputPanel styleClass="landing-wrapper">
+		<p:outputPanel id="header">
+			<p:outputPanel styleClass="header-top">
+				<ul class="landing-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#video">Video</a></li>
+				</ul>
+			</p:outputPanel>
+			<p:outputPanel styleClass="header-content">
+				<ui:insert name="header"></ui:insert>
+			</p:outputPanel>
+		</p:outputPanel>
+		<p:outputPanel id="features">
+			<ui:insert name="features"></ui:insert>
+		</p:outputPanel>
+		<p:outputPanel id="events">
+			<ui:insert name="events"></ui:insert>
+		</p:outputPanel>
+		<p:outputPanel id="pricing">
+			<ui:insert name="pricing"></ui:insert>
+		</p:outputPanel>
+		<p:outputPanel id="video">
+			<ui:insert name="video"></ui:insert>
+		</p:outputPanel>
+		<p:outputPanel id="footer">
+			<div>
+				<ul class="landing-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#video">Video</a></li>
+				</ul>
+			</div>
+			<ui:insert name="footer"></ui:insert>
+		</p:outputPanel>
+	</p:outputPanel>
+</h:body>
+</html>
