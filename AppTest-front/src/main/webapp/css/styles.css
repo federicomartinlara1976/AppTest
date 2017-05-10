@@ -49,3 +49,87 @@
 .c100 {
 	width: 100%;
 }
+
+#header .header-top {
+	padding-top: 60px;
+}
+
+#header .header-top .logo {
+	width: 125px;
+}
+
+#header .header-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#header .header-content h1 {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+#header .header-content h2 {
+	color: #7d8286;
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+#header .header-content button {
+	width: 170px;
+}
+
+#features {
+	background-color: #393b3e;
+}
+
+#features>div {
+	padding: 60px 0 75px 0;
+	color: #ffffff;
+}
+
+#features>div h1 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #ffffff;
+	margin: 15px 0;
+}
+
+#features>div .features-content {
+	text-align: left;
+}
+
+#features>div .features-content h3 {
+	font-size: 18px;
+	margin: 0;
+}
+
+#features>div .features-content p {
+	font-size: 14px;
+	margin: 6px 0 0 0;
+}
+
+#features>div .features-content img {
+	width: 72px;
+}
+
+#features>div .features-content .ui-g-12 {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 36px;
+}
+
+#features>div .features-content .feature-left img {
+	float: left;
+	margin-right: 12px;
+}
+
+#features>div .features-content .feature-right {
+	text-align: right;
+}
+
+#features>div .features-content .feature-right img {
+	float: right;
+	margin-left: 12px;
+}
