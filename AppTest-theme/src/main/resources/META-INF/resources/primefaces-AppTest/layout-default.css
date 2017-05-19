@@ -588,39 +588,7 @@
       padding: 15px 50px; } }
 
 
-@media (max-width: 960px) {
-  .landing-body {
-    background: #f4f4f4; }
-    .landing-body .landing-menu li {
-      font-size: 16px;
-      margin-left: 16px; }
-    .landing-body .landing-wrapper #header .header-top {
-      width: 100%; }
-    .landing-body .landing-wrapper #header .header-content {
-      width: 100%; }
-    .landing-body .landing-wrapper #features > div {
-      width: 100%; }
-    .landing-body .landing-wrapper #events > div {
-      width: 100%; }
-      .landing-body .landing-wrapper #events > div .event-box .event-box-content h3 {
-        font-size: 24px; }
-      .landing-body .landing-wrapper #events > div .event-box .event-box-content p {
-        display: none; }
-    .landing-body .landing-wrapper #pricing > div {
-      width: 100%;
-      padding: 0 30px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-    .landing-body .landing-wrapper #video > div {
-      width: 100%; }
-      .landing-body .landing-wrapper #video > div iframe {
-        width: 300px;
-        height: 169px; }
-    .landing-body .landing-wrapper #footer > div {
-      width: 100%; }
-      .landing-body .landing-wrapper #footer > div ul {
-        display: none; } }
+
 html {
   height: 100%; }
 
