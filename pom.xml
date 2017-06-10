@@ -4,7 +4,7 @@
 
     <groupId>net.bounceme.chronos</groupId>
     <artifactId>AppTest</artifactId>
-    <version>${my.version}</version>
+    <version>1.0.Final</version>
     <packaging>pom</packaging>
 
     <name>AppTest</name>
